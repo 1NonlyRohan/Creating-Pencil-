@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Math;
+    font-size: 16px;
+    background: #fff !important;
+}
+
+.Pencil {
+    background-color: #ff0202;
+    height: 20px;
+    width: 350px;
+    margin: 200px 0 0 500px;
+    transform: rotate(330deg);
+    position: relative;
+}
+
+.Pencil::before, .Pencil::after{
+    content: "";
+    position: absolute;
+}
+
+.Pencil::before {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #8d8c8c;
+    transform: rotate(-90deg);
+    left: -20px;
+}
+
+.Pencil::after {
+    height: 20px;
+    width: 10px;
+    border-radius: 0px 5px 5px 0px;
+    background-color: #979797;
+    left: 350px;
+}
+
+h1 {
+    letter-spacing: 1px;
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: 222px;
+    left: 586px;
+    transform: rotate(329deg);
+}
+
+.foot {
+    position: absolute;
+    top: 350px;
+    left: 400px;
+}
+
+.foot p{
+    font-size: 20px;
+    font-family: josefin sans;
+    font-weight: 800;
+    color: grey;
+}
